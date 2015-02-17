@@ -1,9 +1,8 @@
-# Latency
-
+# Meteor Latency
 
 ### Installation
 ```sh
-$ mrt add latency
+$ meteor add mikael:latency
 ```
 
 ### Usage
@@ -34,4 +33,7 @@ Meteor.call('myMethod', function (error, result) {
 ```
 
 ### Background
-Inspired by @cmather [meteor-methods](https://github.com/EventedMind/meteor-methods) demo. Found myself using the bogus loop quite a bit when checking login forms, etc., for my different Meteor projects.
+Found myself writing a bogus loop quite a bit when checking latency
+compensation on login forms, etc., for my Meteor projects. Inspired
+by [@cmather](https://github.com/cmather)'s
+[meteor-methods](https://github.com/EventedMind/meteor-methods) demo.

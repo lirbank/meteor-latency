@@ -1,14 +1,12 @@
 Package.describe({
-  name: 'latency',
-  summary: 'Simulate latency in Meteor apps'
+  name: 'mikael:latency',
+  version: '0.0.1',
+  summary: 'Simulate latency in Meteor apps',
+  git: 'https://github.com/lirbank/meteor-latency.git',
+  documentation: 'README.md'
 });
 
-Package.on_use(function (api) {
-   api.add_files('latency.js', ['client', 'server']);
-});
-
-Package.on_test(function (api) {
-  api.use('latency');
-  api.use('tinytest');
-  api.add_files('latency_tests.js');
+Package.onUse(function (api) {
+  api.versionsFrom('1.0.3.1');
+  api.addFiles('latency.js');
 });
